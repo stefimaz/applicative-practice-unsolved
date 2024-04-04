@@ -12,7 +12,7 @@ export function getAsteroidsDiscoveredAfterYear(data, year) {
    .map(function(asteroid) {
     return asteroid.name;
    });
-   console.log(data);
+   //console.log(data);
   return asteroids; 
 }
 
