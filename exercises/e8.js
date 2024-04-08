@@ -8,13 +8,13 @@ export function findPlanetNameByMoon(data, moonName) {
   // Your code goes here...
   const planet = data.planets
     .filter((planet) => planet.moonsCount > 0)
-    .find(planet => planet.moons.includes(moonName));
+    .find((planet) => planet.moons.includes(moonName));
     if (planet) {
       return planet.name;
     };
   }
 
-
+  
 
 // === TEST YOURSELF ===
 // Once you're finished run the test with "npm run test-8"
