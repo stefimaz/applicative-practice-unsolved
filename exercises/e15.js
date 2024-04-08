@@ -6,10 +6,9 @@ import { data } from "../data/data";
 
 export function getPlanetsWithNoMoons(data) {
   // Your code goes here...
-  const planets = data.planets
-    .filter(planet => planet.moons === undefined)
+  return data.planets
+    .filter(planet => !planet.moons)
     .map(planet => planet.name);
-    return planets; 
 }
 
 
